@@ -1,0 +1,5 @@
+1. การสร้าง class ต้องมี constructor เเละสร้าง object ขึ้นมาโดยมีการ Error Handling เมื่อไม่ตรงตามเงื่อนไขก็โชว์ error นั้นขึ้นมา ตรง showinfo จะ return
+ผลในรูปเเบบ destructuring เเละตรง class garage มีการสร้าง object ที่เป็น array มีการคำสั่ง array เช่น push ในการเพิ่มข้อมูลใน array filter ในการหาข้อมูลใน array
+map เอาค่าทุกตัวใน array มาประมวลผล แล้วสร้าง array ใหม่
+2. (ถามchatให้ช่วยอธิบายโค้ดบางส่วน) ตรง if คือการเช็คจำนวนสิ่งที่อยู่ใน object ว่าเท่ากันมั้ย ถ้าไม่เท่ากันจะ return false ทันที ถ้าเท่ากันจะลงมาทำ for loop ข้างล่างต่อ
+วน loop เช็คสมาชิกใน object ทีละตัว ถ้าค่าของ object1 กับ object2 ไม่ตรงกันจะ return false ทันที ถ้าทุกตัวตรงกัน จะเช็คจนครบทุกตัวเเละloop จบโดยไม่มีปัญหา เเละ return true
