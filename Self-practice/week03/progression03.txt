@@ -1,0 +1,10 @@
+ข้อ 1 รับค่า string มาเเละเปลี่ยนเป็นตัวใหญ่ทั้งหมดหรือใส่ ! หลังคำนั้นโดยการเรียกผ่าน function เเต่ละอัน โดยอย่างเเรกต้องเช็คก่อนว่ามีค่า input เข้ามามั้ยโดยใช้ if-else
+เเละเมื่อมีค่าเข้ามา เเปลงค่า string ให้เป็น array โดยจะบันทึกเข้าตัวเเปร word เเละ .map จะวนทุก element ใน words แล้วเรียกฟังก์ชัน transformer 
+(word) โดยสังเกตตอน consloe.log(Transformation("hello world", toUpper)); จะมี 2 parameter คือ "hello world" ถูกเก็บใน parameter sentence เเละ 
+toUpper ถูกเก็บใน parameter transformer ตอนนี้ transformer คือ reference ของ toUpper มันจึงเรียกใช้ function toUpper เเละเเปลงให้เป็นตัวอักษรใหญ่ทั้งหมด 
+เเละส่งค่าไปให้ t เเละสุดท้าย t จะรวม array เป็น string
+
+ข้อ 2 ข้อนี้ก็หลักการเดียวกัน โดยเช็คก่อนเลยว่าค่าที่รับมาเป็น array ของ number เเน่ๆ console.log(customcalculator([1, 2, 3, 4], plus)); จะมี 2 parameter คือ
+[1, 2, 3, 4] ถูกเก็บใน parameter numbers , plus ถูกเก็บใน parameter operation ตอนนี้ operation คือ reference ของ plus มันจึงเรียกใช้ function plus
+โดย function plus จะ return ผลรวมของค่าทั้งหมดใน array โดยใช้ .reduce เข้ามาช่วยในการรวมค่าใน array โดยเริ่มตั้งเเต่เลขหลัง , จนครบทุกตัวใน array 
+เเละได้ออกมาเป็น1ค่า เเละ return ผลลัพท์สุดท้ายออกมา

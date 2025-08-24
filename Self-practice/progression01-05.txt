@@ -4,3 +4,6 @@ week02
 - เรียนเรื่องของ object 1. object literals เป็นการสร้าง object ง่ายๆ {name: value} 2. constructor function เป็นการสร้าง function ที่มีหลาย object ใน function นั้น
 มี this ที่เอาไว้บอกว่า object ใหม่ที่จะถูกสร้างขึ้น 3. class จะเขียนคล้าย constructor function แต่อ่านง่ายและชัดเจนกว่า 4. Object.create(proto) ใช้สร้าง object ใหม่ 
 โดยกำหนด prototype ของมันได้เลย ถ้า new ใช้กับ constructor function / class เเต่ Object.create() ใช้สร้าง object โดยตรงจาก object ที่มีอยู่แล้ว(เป็น prototype)
+week03
+- เรียนเรื่อง function มันก็จะมี function ปกติ เเละ Higher-Order Function เป็นฟังก์ชันที่รับฟังก์ชันอื่นเป็น parameter หรือ return ฟังก์ชันออกมา เเละมีการใช้ callback function
+้higher-order function ดูงงๆต้องดูการทำงานของมันดีๆเพราะมันคือ function ซ้อน function อีกที
