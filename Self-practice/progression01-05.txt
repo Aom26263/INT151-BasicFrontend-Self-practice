@@ -7,3 +7,7 @@ week02
 week03
 - เรียนเรื่อง function มันก็จะมี function ปกติ เเละ Higher-Order Function เป็นฟังก์ชันที่รับฟังก์ชันอื่นเป็น parameter หรือ return ฟังก์ชันออกมา เเละมีการใช้ callback function
 ้higher-order function ดูงงๆต้องดูการทำงานของมันดีๆเพราะมันคือ function ซ้อน function อีกที
+week04 
+- เรียนเรื่องการใช้ฟังชัน array ใช้รวมกับ object โดยการใช้ฟังชัน array ดึงข้อมูลจาก object forEach เอา element ใน array มาวางไว้ในตัวแปรใหม่ทีละรอบ
+filter หาข้อมูลใน array ตามเงื่อนไขที่กำหนด map ที่เอาไว้แปลงข้อมูลใน array ให้กลายเป็น array ใหม่ โดยจะทำงานกับทุก element แล้ว return ค่าใหม่ออกมา
+push เพิ่มข้อมูลเข้า array ต่อด้านหลัง unshift เพิ่มข้อมูลเข้า array ต่อด้านหน้า pop remove ท้าย array shift remove ต้น array
