@@ -11,3 +11,51 @@ week04
 - เรียนเรื่องการใช้ฟังชัน array ใช้รวมกับ object โดยการใช้ฟังชัน array ดึงข้อมูลจาก object forEach เอา element ใน array มาวางไว้ในตัวแปรใหม่ทีละรอบ
 filter หาข้อมูลใน array ตามเงื่อนไขที่กำหนด map ที่เอาไว้แปลงข้อมูลใน array ให้กลายเป็น array ใหม่ โดยจะทำงานกับทุก element แล้ว return ค่าใหม่ออกมา
 push เพิ่มข้อมูลเข้า array ต่อด้านหลัง unshift เพิ่มข้อมูลเข้า array ต่อด้านหน้า pop remove ท้าย array shift remove ต้น array
+week05
+- เรียนเรื่อง JavaScript Modules Export/Import
+Named Export สามารถexport ได้หลายอย่างในไฟล์เดียว แล้วเรียกใช้แบบ {} ex.
+ตัวอย่างเอามาจากที่เรียน + chatGPT
+// utilities.js
+export function echo(msg) { return msg }
+export const GPA = 3.0
+export class Book {}
+// test.js
+import { echo, GPA, Book } from "./utilities.js"
+ส่วน default export ใช้ได้เเค่ตัวเดียว เเละไม่ต้องมี {} ex. 
+// utilities.js
+export default function getLength(str) {
+  return str.length
+}
+// test.js
+import getLength from "./utilities.js"
+พอเอามารวมกัน
+// utilities.js
+function echo(msg) { return msg }
+function getLength(str) { return str.length }
+class Book { constructor(id) { this.id = id } }
+
+export { echo, Book, getLength as default }
+echo ก็จะเป็น name export
+Book เป็น name exportง
+getLength เป็น default export
+// test.js
+import getLength, { echo, Book } from "./utilities.js"
+
+module.exports = {} → ส่งออก ฟังก์ชัน, คลาส, ตัวแปร ออกไปใช้ในไฟล์อื่น
+ex.
+function echo(msg) { return msg }
+function getLength(str) { return str.length }
+const GPAAverage = 3.0
+class Book {
+  constructor(id) { this.id = id }
+}
+
+module.exports = { echo, getLength, GPA: GPAAverage, Book }
+
+const { echo, getLength, GPA, Book } = require("./utilities.js")
+
+console.log(echo("Hello"))       // Hello
+console.log(getLength("JS"))     // 2
+console.log(GPA)                 // 3.0
+const b = new Book(101)
+console.log(b)                   // Book { id: 101 }

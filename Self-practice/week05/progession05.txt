@@ -1,0 +1,3 @@
+ข้อ 1 ทดลองใช้ name export กับ default export ในการดึง function จาก utilties.js มาใช้
+ข้อ 2 ให้เพิ่ม object เเละ method เข้าไป ลองใช้ name export ดึงค่ามาสร้างเป็น object ใหม่
+โดยรวม class ในอาทิตนี้ให้เข้าใจเกี่ยวกับ name export default export module export
