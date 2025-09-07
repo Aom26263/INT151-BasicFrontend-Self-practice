@@ -15,3 +15,46 @@
 // "Book: <title>, Author: <author>, ID: <id>"
 // จากนั้นใน test.js ให้สร้าง object Book ขึ้นมา 2 เล่ม แล้วใช้ getSummary() แสดงรายละเอียดหนังสือแต่ละเล่ม
 //คำตอบอยู่ใน test.js utilities.js
+
+//โจทใน silde
+//  Write a function addProperty(obj, key, value) that adds a new 
+// property to an object and returns the updated object.
+//  Output
+//  • console.log(addProperty({ name: 'John' }, 'age', 25)) 
+// { name: 'John', age: 25 }
+//  • console.log(addProperty({}, 'city', 'New York’))
+function addProperty(obj, key, value) {
+    obj[key] = value
+    return obj;
+}
+
+console.log(addProperty({ name: 'John' }, 'age', 25)) 
+console.log(addProperty({}, 'city', 'New York'))
+
+// Write a function getFreqOfWords(sentence) that returns an object with keys representing 
+// unique words in lowercase and values representing the frequency of occurrences of each 
+// word with ignore case in the sentence. If the input string is null or undefined, return 
+// undefined
+// Output
+//  • console.log(getFreqOfWords('Today is present and present is your gift'))
+//  //{ today: 1, is: 2, present: 2, and: 1, your: 1, gift: 1 }
+//  • console.log(getFreqOfWords('Do you best just do it’))
+//  //{ do: 2, you: 1, best: 1, just: 1, it: 1 }
+//  • console.log(getFreqOfWords(null)) //undefined
+//  • console.log(getFreqOfWords(undefined)) //undefined
+
+function getFreqOfWords(sentence) {
+    if (sentence === null || sentence === undefined) {
+        return undefined;
+    }
+    
+    const words = sentence.toLowerCase().split(" ");
+    const freq = {};
+
+      for (let word of words) {
+        freq[word] = (freq[word] || 0) + 1;
+    }
+    return freq;
+}
+console.log(getFreqOfWords('Today is present and present is your gift'))
+console.log(getFreqOfWords('Do you best just do it'))

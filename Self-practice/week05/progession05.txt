@@ -1,3 +1,10 @@
 ข้อ 1 ทดลองใช้ name export กับ default export ในการดึง function จาก utilties.js มาใช้
 ข้อ 2 ให้เพิ่ม object เเละ method เข้าไป ลองใช้ name export ดึงค่ามาสร้างเป็น object ใหม่
 โดยรวม class ในอาทิตนี้ให้เข้าใจเกี่ยวกับ name export default export module export
+โจทใน silde
+ข้อ 1 สร้าง function ชื่อ addProperty รับ 3 parameter obj คือ object ที่เราต้องการเพิ่ม property เข้าไป key คือชื่อ property (เป็น string) ที่เราจะเพิ่ม 
+value คือค่าที่จะใส่ใน property นั้น เเละใช้เครื่องหมาย [] เพื่อเพิ่ม property ใหม่เข้าไปใน object ถ้า property ที่ชื่อ key ยังไม่มี จะสร้างใหม่เเต่ถ้ามีอยู่แล้ว จะถูกแทนที่ด้วยค่าใหม่ 
+(value)
+ข้อ 2 เช็ค sentence ที่รับเข้ามาก่อนว่าเป็น null หรือ undefined มั้ย ถ้าใช่ return undefined ถ้าไม่ใช่โปรเเกรมก็จะทำงานต่อโดยสร้างตัวเเปร word ที่เก็บ sentence 
+ให้เป็นตัวเล็กทั้งหมดเเละเเยกออกมาเป็นคำ เเละสร้างตัวเเปร freq ที่รับจำนวนคำที่ได้มา จากนั้นก็วนลูป ถ้าเจอคำซ้ำกันก็บอกไปทีละหนึ่ง เช็คตามคำในประโยคไปเรื่อยๆ เเละ 
+return freq ออกมา
